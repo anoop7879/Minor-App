@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.div_1
+{
+  height:400px;
+  width:400px;
+  color: black;
+  background: white;
+  text-align: center;
+  font-family:arial;
+  font-size:20px;
+  padding-top:10px;
+ margin: 0px auto 0px;
+}
+
+
+header
+{ margin: 0px auto 0px;
+  color: black;
+  background: white;
+  text-align: center;
+  font-family:arial;
+  font-size:40px;
+}
+
+footer {
+
+  margin: 0px auto 0px;
+  color: black;
+  background: white;
+  text-align: center;
+  font-family:arial;
+  font-size:40px;
+ 
+  width:100%;
+  text-align:center;
+ 
+}
+
+p{
+	font-size:20px;
+}
+
+h1{
+
+  margin: 0px auto 0px;
+  color: black;
+  background: white;
+  text-align: center;
+  font-family:arial;
+  font-size:40px;
+  padding: 20px;
+  height:10px;
+}
+.div_4 {
+
+  margin: 0px auto 0px;
+  color: black;
+  background: white;
+  text-align: center;
+  font-family:arial;
+  font-size:40px;
+  position:absolute;
+  bottom:-150px;
+  width:85%;
+  text-align:center;
+ 
+}
+form, .content {
+
+  margin: 0px auto;
+  font-size:30px;
+  padding:50px;
+  text-align:left;
+  height:100%;
+  font-family:arial;
+  background:white;
+  
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group select , input {
+  height: 30px;
+  width: 70%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+body{
+	font-size: 120%;
+	padding:100px;
+	background-image:url("../images/bg.jpg");
+	
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+.div_4
+{
+	background:white;
+	float:right;
+	width:39%;
+	padding-top:60px;
+	height:100%;
+}
+   .div_3{ 
+   border:2px solid black ;
+   float:left;
+   width:60%;
+   height:60%;
+    display: inline;
+   }
+.div_2 { 
+    display: block;
+	
+   }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/vehicleD.css"/>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.footer {
+  overflow: hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  text-align:center;
+  bottom:0;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">Online Parking Reservation System</a>
+  <div class="header-right">
+    <a  href="after_login_home.php">Home </a>
+    <a href="parking_status.php">Parking Status</a>
+    <a class="active" href="vehicle_details.html">Book Parking</a>
+    <a href="unbook.html">Unbook Parking</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="php_logout.php">Log out</a>
+  </div>
+</div>
+
+<div >
+  
+  
+<div class="div_1">
+  <div class="div_2">
+  	<h2> Describe your Vehicle Details</h2>
+  </div>
+	
+  <form method="post" action="process_vehicle.php">
+ 
+		
+	<div class="input-group">
+  	  <label>Model</label>
+  	  <input type="text" placeholder="eg. TOYOTO ALLION" name="model" Required>
+  	</div>
+  		
+	<div class="input-group">
+  	  <label>Vehicle Type</label>
+  	   <select class="input-group" name="vehicle" class="cjComboBox" >
+			<option value="volvo">Car</option>
+			<option value="saab">Lorry</option>
+			<option value="saab">Trailer</option>
+			</select>
+  	</div
+	
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Next to Parking Space</button>
+  	</div>
+  </form>
+  </div>
+
+  
+</div>
+<div class="footer">@ copyright  All Rights reserved</div>
+</body>
+</html>

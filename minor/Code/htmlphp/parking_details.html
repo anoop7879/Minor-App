@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/parkingD.css"/>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.footer {
+  overflow: hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  text-align:center;
+  bottom:0;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="" class="logo">Online Parking Reservation System</a>
+  <div class="header-right">
+    <a  href="after_login_home.html">Home </a>
+    <a href="parking_status.php">Parking Status</a>
+    <a class="active" href="vehicle_details.html">Book Parking</a>
+    <a href="unbook.html">Unbook Parking</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="php_logout.php">Log out</a>
+  </div>
+</div>
+
+<div class="div_1">
+<div>
+	<form action="process_parking.php" method="post">
+	
+	<fieldset class="div_2">
+	<label style="align:center;"><strong >Parking Details</strong></label>
+	<hr />
+	   <label>Recommended Region For You - as per your vehicles body size</label></br>
+	   <select name="street" class="cjComboBox" ></br>
+			<option value="CITY MALL">CITY MALL - Cars Only</option></br>
+			<option value="INDORE STREET">Rajwada - Lories and Cars</option></br>
+			
+		</select>
+		</br>
+		</br><select name="plot" class="cjComboBox" required >
+			<option value="PL 001">PL 001</option>
+			<option value="PL 002">PL 002</option>
+			<option value="PL 003">PL 003</option>
+			<option value="PL 004">PL 004</option>
+			<option value="PL 005">PL 005</option>
+			<option value="PL 006">PL 006</option>
+			<option value="PL 007">PL 007</option>
+			<option value="PL 008">PL 008</option>
+			<option value="PL 009">PL 009</option>
+			<option value="PL 010">PL 010</option>
+			<option value="PL 011">PL 011</option>
+			<option value="PL 012">PL 012</option>
+		</select>
+		</br>
+	<label>Plate Number</label></br>
+	  <input type="text"  name="plateno" placeholder="eg. KAC123" maxlength="14"  required>
+	  </br>
+	<label><strong>Payment Information</strong></label>
+	<hr /></br>
+	<label>Enter M-pesa Confirmation Number:</label></br>
+	<input type="text" name="account" placeholder="CARD number 6776 5678 3453" required title="Credit card number"  maxlength="14" placeholder="eg. 3456 6543 6789" required> 
+	 </br>
+	   <label>Note: Parking Fees: cash. 120/-</label>
+</br>	</fieldset>
+	<footer>
+	  <input type="submit" class="btnLogin" value="Proceed to Date & Time" >
+	</footer>
+</form>
+</div>
+
+<div class="footer">@ copyright  All Rights reserved</div>
+</body>
+</html>

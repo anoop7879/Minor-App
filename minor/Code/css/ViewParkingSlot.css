@@ -1,0 +1,46 @@
+td ,td {
+  height: 50px;
+  width:60%;
+  font-size:20px;
+  padding: 15px;
+  text-align: center;
+  word-spacing:10px;
+   
+	border: 1px solid #000000;
+	background-color: yellow;
+  color: black;
+}
+h1
+{
+	text-align:center;
+	background-color:grey;
+	padding:20px;
+	margin:auto;
+}
+table {
+  border: 1px solid black;
+  width:560px;
+  
+  color:white;
+  }
+  .left{
+	  float:left;
+
+  }
+  .right{
+	  float:right;
+  }
+ .inline
+ {
+	 display:inline;
+	 margin:0px;
+	 border:1px solid red;
+  }
+  p{
+	  font-size:20px;
+  }
+  
+  {
+	  size:10px;
+	  float:center;
+  }

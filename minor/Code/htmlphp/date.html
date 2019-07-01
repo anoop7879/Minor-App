@@ -1,0 +1,92 @@
+<html>
+<head><link rel="stylesheet" href="../css/timeD.css"</head>
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.footer {
+  overflow: hidden;
+  position:fixed;
+  left:0;
+  right:0;
+  text-align:center;
+  bottom:0;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="" class="logo">Online Parking Reservation System</a>
+  <div class="header-right">
+    <a  href="after_login_home.html">Home </a>
+    <a href="parking_status.php">Parking Status</a>
+    <a class="active" href="vehicle_details.html">Book Parking</a>
+    <a href="unbook.html">Unbook Parking</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="php_logout.php">Log out</a>
+  </div>
+</div>
+<div class="div_1">
+<form class="" action="process_time.php" method="post">
+	<fieldset class="boxBody">
+	 <label>Specify Date to book</label></br>
+	 <label>From:</label></br>
+	<input type="date" name="from" required>
+</br>	<label>To:</label>
+	</br><input type="date" name="to"  required>
+	 
+	</fieldset>
+	
+	<footer>
+	  <input type="submit" class="btnLogin" value="Book" tabindex="4">
+	</footer>
+</form>
+</div><div class="footer">@ copyright  All Rights reserved</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+p
+{
+  color:grey;
+	
+}
+.center
+{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;	
+}
+a{
+	
+	color:black;
+  text-decoration:none;
+  }
+}
+
+a:hover
+{
+  background-color: #ddd;
+	
+}
+div
+{
+  background-color:white;
+}
+.footer
+{
+	text-align:center;
+	background-color:grey;
+	}
+button
+{
+	font-size:10px;
+	float:right;
+	background-color:white;
+	color:grey;
+}
+table{
+	background:white;
+	
+	font-size:20px;
+	
+}
+li
+{
+	list-style:none;
+	text-decoration:none;
+}
